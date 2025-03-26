@@ -9,9 +9,9 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className={`mb-16 font-myfont fixed top-0 left-0 w-full z-50 h-16 bg-mylight dark:bg-mydark 
+    <nav className="font-myfont fixed top-0 left-0 w-full z-50 h-16 bg-mylight dark:bg-mydark 
       flex justify-between items-center px-6 md:px-12 
-      border-b border-black backdrop-blur-md shadow-md transition-colors duration-300`}>
+      border-b border-black backdrop-blur-md shadow-md transition-colors duration-300">
 
       {/* Logo */}
       <div 

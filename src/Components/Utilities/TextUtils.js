@@ -74,7 +74,7 @@ const btns = [
 
 
   return (
-    <div className="pt-20 mt-10 pb-20 w-full h-dvh flex flex-col items-center justify-center bg-mywhite dark:bg-mydark transition-colors duration-300 px-4">
+    <div className="pb-10 pt-20  w-full h-full flex flex-col items-center justify-center bg-mywhite dark:bg-mydark transition-colors duration-300 px-4">
       
       <div className="text-center mb-6">
         <h1 className="text-mydark dark:text-mylight text-3xl font-bold font-myfont">TextUtils</h1>
@@ -100,9 +100,9 @@ const btns = [
             >{btns.title}</button>
         ))}
       </div>
-      <div className="container mt-4 flex-row justify-center">
-        <p className='font-myfont text-center'>Total Words: {text.trim() === "" ? 0 : TotalWords(text)}</p>
-        <p className='font-myfont text-center'>Total Sentences: {text.trim() === "" ? 0 : TotalSentences(text)}</p>
+      <div className="container mt-4  flex-row justify-center">
+        <p className='font-myfont text-center text-mydark dark:text-mylight'>Total Words: {text.trim() === "" ? 0 : TotalWords(text)}</p>
+        <p className='font-myfont text-center text-mydark dark:text-mylight'>Total Sentences: {text.trim() === "" ? 0 : TotalSentences(text)}</p>
       </div>
       
     </div>
