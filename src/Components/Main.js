@@ -14,6 +14,7 @@ export default function Main(props) {
     { name: "Plagiarism Checker", path: "/plagiarism-checker" },
     { name: "YT Video Downloader", path: "/yt-video-downloader" },
     { name: "Barcode Generator", path: "/barcode-generator" },
+    { name: "TextUtils", path: "/textutils" },
   ];
 
   return (

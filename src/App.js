@@ -17,6 +17,7 @@ import PDFGenerator from "./Components/Utilities/PDFGenerator";
 import PlagiarismChecker from "./Components/Utilities/PlagiarismChecker"; 
 import YTVideoDownloader from "./Components/Utilities/YTVideoDownloader"; 
 import BarcodeGenerator from "./Components/Utilities/BarcodeGenerator"; 
+import TextUtils from './Components/Utilities/TextUtils';
 
 function App() {
   // Context API  Dark Mode State
@@ -61,6 +62,7 @@ function App() {
           <Route path="/plagiarism-checker" element={<PlagiarismChecker />} />
           <Route path="/yt-video-downloader" element={<YTVideoDownloader />} />
           <Route path="/barcode-generator" element={<BarcodeGenerator />} />
+          <Route path="/textutils" element={<TextUtils />} />
         </Routes>
       </Router>
     </ThemeProvider>
