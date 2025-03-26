@@ -8,7 +8,7 @@ const handleOnChange=(event)=>{
   setText(event.target.value)
 }
 // copy function
-const Copy = () => {
+const Copy = async () => {
   if(text.trim()===""){
     alert("Enter text")
   }else{
@@ -16,7 +16,7 @@ const Copy = () => {
   }
 };
 // cut function
-const Cut = () => {
+const Cut = async () => {
   if(text.trim()===""){
     alert("Enter text")
   }else{
