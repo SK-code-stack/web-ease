@@ -21,21 +21,21 @@ export default function TypingSpeedTester() {
     const newText = e.target.value;
     setInputText(newText);
   
-    // Calculate WPM only for correct words
+    // wpm function
     const correctWords = sampleText
       .split(" ")
       .filter((word, index) => word === newText.trim().split(/\s+/)[index]);
   
-    const timeElapsed = (180 - timer) / 60; // Convert seconds to minutes
+    const timeElapsed = (180 - timer) / 60; // munites to seconds
     if (timeElapsed > 0) setWordsPerMinute(Math.round(correctWords.length / timeElapsed));
   };
   
 
   const getHighlightedText = () => {
     return sampleText.split("").map((char, index) => {
-      let inputChar = inputText[index] || ""; // Get corresponding user input character
+      let inputChar = inputText[index] || ""; // match imput
       let isCorrect = inputChar === char;
-      let isExtra = index >= inputText.length; // If user hasn't typed this character yet
+      let isExtra = index >= inputText.length; 
   
       return (
         <span
@@ -48,6 +48,7 @@ export default function TypingSpeedTester() {
     });
   };
   
+
 
   const resetTest = () => {
     setInputText("");
@@ -66,7 +67,7 @@ export default function TypingSpeedTester() {
         <div className="w-full max-w-2xl">
             <div 
         className="text-lg font-myfont mb-4 p-4 bg-mylight dark:bg-mydark rounded-md shadow-upper text-mydark dark:text-mylight dark:shadow-dupper transition-all duration-300"
-        onCopy={(e) => e.preventDefault()} // Disable copying
+        onCopy={(e) => e.preventDefault()} // Disable copy
         onContextMenu={(e) => e.preventDefault()} // Disable right-click
       >
         {getHighlightedText()}
