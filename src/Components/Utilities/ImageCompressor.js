@@ -79,9 +79,11 @@ export default function ImageCompressor() {
             className="hidden"
             id="fileInput"
           />
-          <label htmlFor="fileInput" className="flex items-center gap-2 text-mydark dark:text-mylight cursor-pointer">
-            <HiOutlinePlus className="text-2xl" />
+          <label htmlFor="fileInput" className="flex flex-col items-center gap-2 text-mydark dark:text-mylight cursor-pointer">
+            <HiOutlinePlus className="text-5xl" /> 
+            <p className='font-myfont font-bold'>
             Upload Image
+            </p>
           </label>
         </div>
 
