@@ -1,7 +1,7 @@
 {
   "name": "webease",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://github.com/SK-code-stack/web-ease",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
