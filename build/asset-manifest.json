@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SK-code-stack/web-ease/static/css/main.edb8051c.css",
-    "main.js": "/SK-code-stack/web-ease/static/js/main.bb1bae53.js",
+    "main.css": "/SK-code-stack/web-ease/static/css/main.cfc69f2b.css",
+    "main.js": "/SK-code-stack/web-ease/static/js/main.157b38dd.js",
     "static/js/453.f000dd7f.chunk.js": "/SK-code-stack/web-ease/static/js/453.f000dd7f.chunk.js",
     "index.html": "/SK-code-stack/web-ease/index.html",
-    "main.edb8051c.css.map": "/SK-code-stack/web-ease/static/css/main.edb8051c.css.map",
-    "main.bb1bae53.js.map": "/SK-code-stack/web-ease/static/js/main.bb1bae53.js.map",
+    "main.cfc69f2b.css.map": "/SK-code-stack/web-ease/static/css/main.cfc69f2b.css.map",
+    "main.157b38dd.js.map": "/SK-code-stack/web-ease/static/js/main.157b38dd.js.map",
     "453.f000dd7f.chunk.js.map": "/SK-code-stack/web-ease/static/js/453.f000dd7f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edb8051c.css",
-    "static/js/main.bb1bae53.js"
+    "static/css/main.cfc69f2b.css",
+    "static/js/main.157b38dd.js"
   ]
 }

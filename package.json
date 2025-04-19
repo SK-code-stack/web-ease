@@ -1,7 +1,8 @@
 {
   "name": "webease",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://github.com/SK-code-stack/web-ease",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.8.4",
     "browser-image-compression": "^2.0.2",
+    "fast-speedtest-api": "^0.3.2",
     "lucide-react": "^0.483.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -22,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

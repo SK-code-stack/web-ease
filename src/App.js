@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
@@ -48,22 +48,25 @@ function App() {
     <ThemeProvider value={{ darkMode, toggleMode }}>
       <Router>      
       <Navbar />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/url-shortener" element={<UrlShortener />} />
-          <Route path="/wifi-speed-checker" element={<WifiSpeedChecker />} />
-          <Route path="/qr-code-generator" element={<QRCodeGenerator />} />
-          <Route path="/typing-speed-tester" element={<TypingSpeedTester />} />
-          <Route path="/image-compressor" element={<ImageCompressor />} />
-          <Route path="/pdf-generator" element={<PDFGenerator />} />
-          <Route path="/plagiarism-checker" element={<PlagiarismChecker />} />
-          <Route path="/yt-video-downloader" element={<YTVideoDownloader />} />
-          <Route path="/barcode-generator" element={<BarcodeGenerator />} />
-          <Route path="/textutils" element={<TextUtils />} />
-        </Routes>
+      {/* <Main /> */}
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/url-shortener" element={<UrlShortener />} />
+        <Route path="/wifi-speed-checker" element={<WifiSpeedChecker />} />
+        <Route path="/qr-code-generator" element={<QRCodeGenerator />} />
+        <Route path="/typing-speed-tester" element={<TypingSpeedTester />} />
+        <Route path="/image-compressor" element={<ImageCompressor />} />
+        <Route path="/pdf-generator" element={<PDFGenerator />} />
+        <Route path="/plagiarism-checker" element={<PlagiarismChecker />} />
+        <Route path="/yt-video-downloader" element={<YTVideoDownloader />} />
+        <Route path="/barcode-generator" element={<BarcodeGenerator />} />
+        <Route path="/textutils" element={<TextUtils />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+
+
       </Router>
     </ThemeProvider>
   );

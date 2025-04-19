@@ -26,7 +26,7 @@ export default function ImageCompressor() {
       setSelectedFile(file);
       setCompressedFile(null);
     } else {
-      alert("Please select a valid image file.");
+      alert("Please select a valid image file or try again.");
     }
   };
 
@@ -65,7 +65,7 @@ export default function ImageCompressor() {
         {/* Dropzone */}
         <div
           className={`w-4/5 max-w-xl h-48 sm:h-64 md:h-72 lg:h-80 mt-6 p-6 flex justify-center items-center rounded-md cursor-pointer shadow-upper dark:shadow-dupper font-myfont
-          ${dragActive ? "shadow-hov dark:shadow-dHov" : ""}`}
+          ${dragActive ? "shadow-hov dark:shadow-dHov" : "shadow-hov dark:shadow-dHov"}`}
           onDragOver={handleDragOver}
           onDragEnter={handleDragEnter}
           onDragLeave={handleDragLeave}
