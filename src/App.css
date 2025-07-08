@@ -1,0 +1,15 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+body{
+    background-color: #D6CFE1;
+    transition: all 0.3s ease; 
+
+}
+body.dark{
+    background-color: #2E2E2E;
+}
+

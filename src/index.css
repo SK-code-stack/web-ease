@@ -11,9 +11,7 @@
     font-style: normal;
   }
 
-body {
-    @apply bg-mylight dark:bg-mydark transition-colors duration-300;
-}
+
 /* index.css or global.css */
 /* html
 body,

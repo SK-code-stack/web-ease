@@ -9,9 +9,10 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
+    <>
     <nav className="font-myfont fixed top-0 left-0 w-full z-50 h-16 bg-mylight dark:bg-mydark 
       flex justify-between items-center px-6 md:px-12 
-      border-b border-black backdrop-blur-md shadow-md transition-colors duration-300">
+      border-b border-black backdrop-blur-md shadow-md transition-all duration-300">
 
       {/* Logo */}
       <div 
@@ -66,7 +67,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-mylight dark:bg-mydark shadow-md md:hidden transition-colors duration-300">
+        <div className="absolute top-16 left-0 w-full bg-mylight dark:bg-mydark shadow-md md:hidden transition-all duration-300">
           <ul className="flex flex-col space-y-4 text-center py-4 text-xl font-bold">
             {/* Dark Mode Toggle (Mobile) */}
             <div className="form-check form-switch flex justify-center">
@@ -103,6 +104,9 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+
+
+    </>
   );
 };
 

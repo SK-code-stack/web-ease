@@ -18,7 +18,7 @@ module.exports = {
         //  hov: "inset 4px 4px 6px #bebebe,inset -4px -4px 6px #bebebe", 
         //  upper: " 4px 4px 5px #bebebe, inset -4px -4px 12px #5a5c5b", 
         
-         upper: "6px 6px 6px #56535a, -6px -6px 6px #ffffff", 
+         upper: "3px 3px 5px #56535a, -3px -3px 5px #ffffff", 
          hov: "inset 6px 6px 6px #56535a,inset -6px -6px 6px #ffffff", 
          dupper: "6px 6px 6px #121212, -6px -6px 6px #4a4a4a", 
          dHov: "inset 6px 6px 6px #121212,inset -6px -6px 6px #4a4a4a", 
