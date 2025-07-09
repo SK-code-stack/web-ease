@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react"; 
 import useTheme from '../Context/Theme'; 
 import { useNavigate } from "react-router-dom";
+import { Sun, Moon } from 'lucide-react';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,17 +46,15 @@ const Navbar = () => {
         </li>
 
         {/* Dark Mode Toggle (Desktop) */}
-        <div className="form-check form-switch">
-          <input 
-            className="form-check-input cursor-pointer" 
-            type="checkbox" 
-            role="switch" 
-            id="flexSwitchCheckDefault"
-            onClick={toggleMode} 
-            checked={darkMode} 
-            readOnly
-          />
-        </div>
+        <div className="flex items-center gap-2 cursor-pointer" onClick={toggleMode}>
+          <div>
+            {darkMode ? (
+              <Sun size={20} className="text-mylight" />
+            ) : (
+              <Moon size={20} className="text-mydark" />
+            )}
+          </div>
+    </div>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -70,17 +70,15 @@ const Navbar = () => {
         <div className="absolute top-16 left-0 w-full bg-mylight dark:bg-mydark shadow-md md:hidden transition-all duration-300">
           <ul className="flex flex-col space-y-4 text-center py-4 text-xl font-bold">
             {/* Dark Mode Toggle (Mobile) */}
-            <div className="form-check form-switch flex justify-center">
-              <input 
-                className="form-check-input cursor-pointer" 
-                type="checkbox" 
-                role="switch" 
-                id="flexSwitchCheckMobile"
-                onClick={toggleMode} 
-                checked={darkMode} 
-                readOnly
-              />
-            </div>
+            <div className="flex justify-center gap-2 cursor-pointer text-center" onClick={toggleMode}>
+              <div>
+                {darkMode ? (
+                  <Sun size={20} className="text-mylight" />
+                ) : (
+                  <Moon size={20} className="text-myda" />
+                )}
+              </div>
+          </div>
 
             <li 
               className="block hover:underline text-mydark dark:text-mylight cursor-pointer"

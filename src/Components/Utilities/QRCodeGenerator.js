@@ -58,7 +58,7 @@ export default function QRCodeGenerator() {
           placeholder="Enter URL..."
           value={text}
           onChange={handleOnChange}
-          className="p-2 w-2/4 focus:outline-none bg-mylight text-mydark shadow-upper dark:bg-mydark dark:shadow-dupper dark:text-mylight transition-all duration-300"
+          className="p-2 w-3/4 focus:outline-none bg-mylight text-mydark shadow-upper dark:bg-mydark dark:shadow-dupper dark:text-mylight transition-all duration-300"
         />
         <div className="flex ">
         <button
@@ -73,7 +73,7 @@ export default function QRCodeGenerator() {
           onClick={reset}
           className="mt-8 font-myfont bg-mylight shadow-Bupper active:shadow-Bact dark:bg-mydark dark:text-mylight dark:shadow-Bdupper dark:active:shadow-Bdact py-1 px-3 border-transparent rounded-xl transition-all duration-300 cursor-pointer disabled:opacity-50"
         >
-          Reset Text
+          Reset
         </button>
         </div>
       </form>

@@ -12,7 +12,7 @@ export default function Main(props) {
     { name: "Image Compressor", path: "/image-compressor" },
     // { name: "PDF Generator", path: "/pdf-generator" },
     // { name: "Plagiarism Checker", path: "/plagiarism-checker" },
-    // { name: "YT Video Downloader", path: "/yt-video-downloader" },
+    { name: "YT Video Downloader", path: "/yt-video-downloader" },
     // { name: "Barcode Generator", path: "/barcode-generator" },
     { name: "TextUtils", path: "/textutils" },
   ];

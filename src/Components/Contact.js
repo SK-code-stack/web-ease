@@ -16,6 +16,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                required
                 className="w-full p-2 rounded-md  bg-mylight dark:bg-mydark shadow-upper  dark:shadow-dupper dark:text-white focus:outline-none focus:ring-2 focus:ring-mylight dark:focus:ring-mydark transition-all duration-300"
                 placeholder="Salman"
               />
@@ -26,6 +27,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                required
                 className="w-full p-2 rounded-md  bg-mylight dark:bg-mydark shadow-upper  dark:shadow-dupper  dark:text-white focus:outline-none focus:ring-2 focus:ring-mylight dark:focus:ring-mydark transition-all duration-300"
                 placeholder="Khan"
               />
@@ -39,6 +41,7 @@ export default function Contact() {
             </label>
             <input
               type="email"
+              required
               className="w-full p-2 rounded-md  bg-mylight dark:bg-mydark shadow-upper  dark:shadow-dupper dark:text-white focus:outline-none focus:ring-2 focus:ring-mylight dark:focus:ring-mydark transition-all duration-300"
               placeholder="name@example.com"
             />
@@ -51,6 +54,7 @@ export default function Contact() {
             </label>
             <textarea
               rows="4" 
+              required
               className="w-full p-2 rounded-md  bg-mylight dark:bg-mydark shadow-upper  dark:shadow-dupper dark:text-white focus:outline-none focus:ring-2 focus:ring-mylight dark:focus:ring-mydark transition-all duration-300"
               placeholder="Your message..."
             ></textarea>
